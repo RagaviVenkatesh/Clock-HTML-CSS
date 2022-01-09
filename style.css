@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: peachpuff;
+}
+
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 10px solid purple;
+    box-shadow: 1px 1px 5px black;
+    background-color: plum; 
+}
+
+.circle .fa-long-arrow-alt-up{
+    display: block;
+    text-align: center;
+    font-size: 100px;
+    color: purple;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+    animation: clock 12s steps(12) infinite;
+    transform-origin: bottom;
+}
+
+@keyframes clock {
+    from{
+        transform: rotateZ(0deg) scale(.6);
+    }
+    to{
+        transform: rotateZ(360deg) scale(.6);
+    }
+}
